@@ -1,4 +1,6 @@
-import com.altkom.Calculator;
+package calculator;
+
+import com.altkom.calculator.Calculator;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

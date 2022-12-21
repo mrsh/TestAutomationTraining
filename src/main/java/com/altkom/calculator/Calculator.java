@@ -1,4 +1,4 @@
-package com.altkom;
+package com.altkom.calculator;
 
 public class Calculator {
     private int x;
