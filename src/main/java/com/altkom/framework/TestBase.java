@@ -4,14 +4,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
 
 public class TestBase {
     protected WebDriver driver;
 
-    @BeforeSuite
+    @BeforeTest
     public void setUpBrowser(ITestContext context) {
         //Ustalenie ścieżki do chromedriver
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
@@ -29,7 +31,7 @@ public class TestBase {
         driver.get("https://automationexercise.com/");
     }
 
-    @AfterSuite
+    @AfterTest
     public void tearDown() {
         //Zamknięcie okna przeglądarki i połączenia między naszym kodem a Chromedriver
         driver.quit();

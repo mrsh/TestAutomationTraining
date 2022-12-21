@@ -9,4 +9,9 @@
             <class name="selenium.basic.MyFirstSeleniumTest"></class>
         </classes>
     </test>
+    <test name="Sign Up test">
+        <classes>
+            <class name="selenium.pop.SignUpTest"/>
+        </classes>
+    </test>
 </suite>
