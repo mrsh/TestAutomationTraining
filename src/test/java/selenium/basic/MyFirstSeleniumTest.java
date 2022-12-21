@@ -18,7 +18,7 @@ public class MyFirstSeleniumTest extends TestBase {
 
     @Test
     public void automationExerciseLaunchTest() {
-        List<WebElement> headerList = driver.findElements(By.id("header1"));
+        List<WebElement> headerList = driver.findElements(By.id("header"));
         Assert.assertNotEquals(headerList.size(),0, "Header section was not displayed");
     }
 }
